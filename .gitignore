@@ -1,0 +1,4 @@
+Manifest.toml
+site/build
+public/*.html
+node_modules

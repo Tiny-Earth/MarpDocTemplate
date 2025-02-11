@@ -1,0 +1,25 @@
+/* boring scrolling */
+body {
+    scroll-snap-type: initial;
+}
+
+body > svg {
+    width: 8.5in;
+    height: 11in;
+    margin: 0 auto;
+}
+
+body > svg.autoscale {
+    width: 100%;
+    max-width: 100%;
+    height: unset !important;
+    max-height: 100%;
+    margin: 0;
+}
+
+/* page breaks */
+@media not print {
+    body > svg {
+        padding-bottom: 3px;
+    }
+}

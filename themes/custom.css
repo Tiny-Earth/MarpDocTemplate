@@ -1,0 +1,47 @@
+/**
+* @theme custom
+* @size a4 8.5in 11in
+* @size half-a4 5.5in 8.5in
+* @size sixth-a4 3.3333in 4.25in
+* @size 4:3 10in 7.5in
+* @size 16:9 10in 5.63in
+* @size 16:10 10in 6.25in
+*/
+
+@import "uncover";
+
+/* Font */
+:root {
+    font-size: 16pt;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: normal;
+}
+
+/* Page alignment */
+section {
+    padding: 1in;
+}
+
+section:not(.center) {
+    align-content: start !important;
+    justify-content: normal !important;
+}
+
+/* Remove pagination corner triangle */
+section:after {
+    --color-background-paginate: var(--color-background);
+    --color-background: var(--color-background);
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* code labels */
+section code {
+    border-radius: 8pt;
+    color: #202228; /* --color-foreground in light mode */
+    --color-background-code: var(--color-ability-2);
+}
