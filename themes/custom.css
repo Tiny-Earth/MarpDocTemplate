@@ -38,10 +38,3 @@ section:after {
     font-size: 14pt;
     font-weight: bold;
 }
-
-/* code labels */
-section code {
-    border-radius: 8pt;
-    color: #202228; /* --color-foreground in light mode */
-    --color-background-code: var(--color-ability-2);
-}
